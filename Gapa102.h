@@ -55,7 +55,7 @@ class Gapa102 {
             |    /       Bits for the red color diode                   :possible values (0 - 255)
             |   |       /         Bits for the green color diode        :possible values (0 - 255)
             |   |      |         /        Bits for the blue color diode :possible values (0 - 255)
-            |     |      |        |        / 
+            |   |      |        |        / 
             111XXXXX RRRRRRRR GGGGGGGG BBBBBBBB
         */
         uint32_t color(uint8_t red,uint8_t green,uint8_t blue,uint8_t brightness = 31);

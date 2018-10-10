@@ -91,6 +91,8 @@ class Gapa102 {
         // truns off all pixels on the strip and 
         // and sets all pixel values in the strip array to off
         void off();
+
+        void setBrightness(uint8_t brightness);
 };
 
 #endif //GAPA102H

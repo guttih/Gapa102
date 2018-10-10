@@ -158,5 +158,12 @@ uint8_t Gapa102::colorExtractBrightness(uint32_t color) {
     return (color & 0x1f000000) >> 24; 
 }
 
+void Gapa102::setBrightness(uint8_t brightness) {
+    //write(0xE0FFFFFF | ((uint32_t)(uint8_t)brightness) << 24 );
+    for(uint32_t i = 0; i < _pixelCount; i++) {
+            pixels[i] = (pixels[i] & 0xE0FFFFFF) | (((uint32_t)brightness) << 24 );
+    }
+}
+
 
 
